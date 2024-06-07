@@ -1,0 +1,114 @@
+body {
+    font-family: "Inder", sans-serif;
+    font-size: 16px;
+    color: #FFD700;
+    margin: 3%;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    overflow: hidden, scroll;
+    background-image: url("slike/pexels-sergei-starostin-15862958-6477211.jpg");
+}
+
+h1 { 
+    font-size: 26px;
+    color: #f09716;
+    margin: 0;
+}
+
+h2 {
+    font-size:20px;
+    color:#FFD700;
+    margin: 8px 0px 16px 0px; /* marža zgoraj, desno, spodaj, levo*/
+}
+
+h3{
+    color: #f09716;
+}
+
+a {
+    color:#FFD700;
+    text-decoration: none;
+}
+
+a:hover { /* nad linki spremeni kurzor*/
+    color:#CC0000;
+}
+
+img {
+    max-width: 100%;
+    margin-top: 2rem;
+}
+
+#wrapper {
+    width: 69%;
+    margin: 50px auto 50px auto;
+    padding: 5%;
+    background-color: #103562;
+    position: relative;
+    border-style: dashed;
+    overflow: hidden;
+}
+
+#hyperlink {
+    color:#f09716;
+}
+
+#hyperlink:hover {
+    color:#CC0000;
+}
+
+#okence{
+    background-color: #1650f0; 
+	padding: 0px 10px 10px 10px; 
+	border: outset;
+}
+
+header{
+    overflow: hidden;
+}
+
+nav {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee; 
+}
+nav ul {
+    padding: 0px;
+    line-height: 2rem;
+    text-align: center;
+}
+nav li {
+    border-color: #ccc;
+    border-right: 1px solid #eee;
+    border-left: 1px solid #eee;
+    padding: 0 25px;
+    display: inline-table;
+}
+header img {
+    position: absolute;
+    right: 50px;
+    top: 0px;
+    width: 100px;
+}
+
+section{
+    width:60%;
+    margin-right: 10%;
+    float:left;
+}
+
+aside{
+    width:30%;
+    float:right;
+}
+
+footer{
+    display: inline;
+    position: relative;
+    bottom: 0px;
+    text-align: center;
+    width:100%;
+}
+
+#navigacija {
+    float: right;
+}

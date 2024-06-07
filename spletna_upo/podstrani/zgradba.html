@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--ŠE 100X PREVERI VSE INFORMACIJE NA TEJ STRANI, DODAJ SLIKE ZGRADBE (MOGOČE ANIMACIJO), PREVERI PREVERI, dodaj PRIMERE zobna ščetka,
+protiprimere, opiši zakaj je temu tako-->
+<html> 
+	<head>
+		<title>Kaj je računalnik</title> 
+    <meta charset="UTF-8"> 
+		<meta name="opis" content="opis arhitekture računalnika po John von Neumannu"> 
+    <meta name="avtor" content="Ivo Štukelj"> 
+		<link rel="stylesheet" href="../style.css"> 
+	</head> 
+
+
+<body>
+  <div id="wrapper">
+    <header style="display: inline;">
+      
+      <h1>Zgradba računalnika</h1>
+      <h2>Podroben opis zgradbe in delovanja računalnika po John von Neumannovi arhitekturi</h2>
+      <a href="../index.html" id="navigacija">
+      <img src="../slike/logospletna.svg" alt="Logotip spletne strani in povezava na začetno stran">
+      <div>Začetna stran</div>
+      </a>
+      <br>
+        <nav>
+          <ul>
+            <li><a href="johnvonneumann.html">John von Neumann</a></li>
+            <li><a href="zgradba.html">Zgradba računalnika</a></li> 
+            <li><a href="vhodno-izhodne.html">Vhodno-izhodne naprave</a></li> 
+            <li><a href="krmiljenje.html">Krmiljenje</a></li>
+            <li><a href="informacije.html">Dodatne informacije in viri</a></li> 
+          </ul>
+        </nav>
+      </header>
+    
+    
+  <section>
+    <h3>Zgradba računalnika</h3>
+    <p>
+    <strong>John von Neumannova arhitektura je temeljni koncept za zasnovo sodobnih računalnikov. V osnovi so računalniki sestavljeni iz štirih ključnih komponent.</strong>
+    </p>
+    <p><strong>Centralna procesna enota (CPE ang. CPU)</strong><br>
+        CPE izvaja ukaze in obdeluje podatke.
+        Sestavljena je iz aritmetično-logične enote (ALE ang. ALU), ki izvaja matematične in logične operacije, ter krmilne enote, 
+        ki usmerja delovanje računalnika in izvaja ukaze iz pomnilnika. CPU bere ukaze iz pomnilnika, jih izvaja, 
+        kar vključuje premikanje podatkov med različnimi komponentami računalnika preko vodil. V CPE je še programski števec, operacijski in operandni 
+        register ter akumulator.</p>
+        <p><strong>Pomnilnik</strong><br>Pomnilnik shranjuje tako podatke kot programe, ki jih računalnik potrebuje za delovanje. 
+        Von Neumannova arhitektura uporablja enotno shrambo za programe in podatke, kar omogoča bolj fleksibilno in učinkovito delovanje.
+        Na lihih mestih pomnilnika so shranjene operacije, na sodih mestih pa podatki.<br>
+        Pomnilnik, ki ga poznamo tudi pod kratico RAM (random access memory) ima v tipičnem sodobnem računalniku kapaciteto od 8GB do 16GB.
+        </p>
+		<p><strong>Vhodno-izhodne naprave</strong><br>
+		Te naprave omogočajo komunikacijo računalnika z zunanjim svetom. Vhodne naprave, 
+        kot so tipkovnice, miške in skenerji, omogočajo vnos podatkov v računalnik. Izhodne naprave, kot so monitorji, tiskalniki in zvočniki,
+        omogočajo prikaz in predstavitev podatkov, ki jih obdeluje računalnik. Poznamo tudi vhodno-izhodne naprave, 
+        kot so zasloni na dotik, ponavljalniki ter shramba (HDD, SSD).</p>
+        <p><strong>Vodila</strong> <br>Vodila v računalniku omogočajo prenos podatkov med različnimi deli računalniškega sistema. 
+        Vodila so kabli, ki preko električnih signalov, ki jih prejmejo od različnih delov računalnika, povezujejo procesor, 
+        pomnilnik, vhodno-izhodne naprave in druge komponente računalnika. Tako omogočajo izmenjavo podatkov.
+        Pozor! Napajalni kabel za računalnik ni vodilo, čeprav prevaja električni tok. </p>
+	<br>
+    <h3>Izvajanje programov</h3>
+    <p>
+      V von Neumannovi arhitekturi je pomnilnik organiziran v obliki zaporednih naslovov, kjer je vsak naslov povezan z določeno shranjeno vrednostjo. 
+      V pomnilniku so programi vedno shranjeni v zaporedju navodilo-podatek-navodilo-podatek. 
+      Pomnilnik deluje kot niz celic, vsaka celica ima enoličen naslov, ki ga uporablja CPU za dostop do podatkov.
+    </p>
+    <p>
+      Ko računalnik zažene program, CPE začne s prvim naslovom v pomnilniku in prebere ukaz, ta ukaz nato shrani v operandni register. 
+      Nato prebere naslednjo celico in podatek shrani v operacijski register. Nato s kombinacijo podatka izvrši ukaz v aritmetično-logični enoti ter ga 
+      shrani v akumulator. Da podatek iz akumulatorja shrani v pomnilnik mora prebrati ukaz za shranjevanje in lokacijo shranjevanja (torej opravi še en cikel).
+	  Programski števec v CPE vedno sledi, na katerem mestu mora CPE prebrati naslednji par operacije in podatka.
+    </p>
+    <p>
+      Ta proces omogoča, da računalnik hitro in učinkovito dostopa do podatkov, ki so potrebni za izvajanje 
+	  programov. Ker pomnilnik ni neomejen in si želimo določene programe izvajati večkrat, jih shranimo v
+	  shrambo - tipično so to HDD (trdi diski) in SSD (solid state drive).
+    </p>
+    <p>
+      Von Neumannova arhitektura nam tako omogoča fleksibilnost in učinkovitost pri programiranju,
+	  saj lahko CPU dostopa do podatkov in programov, shranjenih v istem pomnilniku, kar poenostavi 
+	  načrtovanje in delovanje računalniških sistemov.
+    </p>
+  </section>
+  <aside>
+	<div>
+    <img src="../slike/arhitektura.png" alt="Slika zgradbe računalnika">
+    <div>Zgradba računalnika po Neumannovi arhitekturi</div>
+	</div>
+	<br>
+	<div id="okence">
+  <h3>Kako prepoznamo računalnik</h3>
+  <p>Računalnik je tako vse, kar ima CPE, pomnilnik, vhodno-izhodne naprave ter vodila. Primeri računalnikov so:
+  <ul>
+	<li><strong>Mobilni telefon</strong>: Znotraj telefona najdemo CPE in pomnilnik. Vanj podatke vnašamo z 
+	dotiki na zaslonu, ki nam podatke prikazuje.</li>
+	<br>
+	<li><strong>Brezžična miška</strong>: Podatke o vnosu (torej levi/desni klik) obdeluje, da jih lahko pošlje
+	računalniku preko brezžične povezave. Tako je za računalnik miška vhodna naprava, za miško pa je računalnik
+	izhodna naprava.</li>
+	<br>
+	<li><strong>POS terminal</strong>: Terminal za plačila s kartico sprejme podatke za plačilo preko gumbov ter
+	preko vstavljene plačilne kartice. Podatke na kartici prebere, jih obdela in preko povezeve z banko
+	izpiše, če je transakcija uspela. </li>
+	<br>
+	<li><strong>Klimatska naprava</strong>: Iz daljinca sprejme zahtevo, zahtevo obdela, nato zaznava okoliško 
+	temperaturo, kontrolira delovanje hladilne enote in ventilatorja. Vse to kontrolira z vnaprej določenim naloženim
+	programom.</li>
+	<br>
+	<li><strong>Električna zobna ščetka</strong>: Njen vhod je gumb, izhod pa signal pa kontrola motorja,
+	ki trese ščetine. Glede na dolžino pritiska gumba na ščetki spremenimo program, ki naj se izvaja v procesorju.</li>
+  </ul>
+  </p>
+	</div>
+  </aside>
+  
+
+  
+  </div>
+
+  <div>
+    <footer>
+      <p>©2024 Ivo Štukelj</p>
+    </footer>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<title>Kaj je računalnik</title> 
+    <meta charset="UTF-8"> 
+		<meta name="opis" content="opis vhodnih, izhodnih ter vhodno-izhodnih naprav"> 
+    <meta name="avtor" content="Ivo Štukelj"> 
+		<link rel="stylesheet" href="../style.css"> 
+	</head> 
+
+
+<body>
+  <div id="wrapper">
+    <header style="display: inline;">
+      
+      <h1>Vhodne, izhodne in vhodno-izhodne naprave</h1>
+      <h2>Naprave za interakcijo z računalniki</h2>
+      <a href="../index.html" id="navigacija">
+      <img src="../slike/logospletna.svg" alt="Logotip spletne strani in povezava na začetno stran">
+      <div>Začetna stran</div>
+      </a>
+      <br>
+      <nav>
+        <ul>
+          <li><a href="johnvonneumann.html">John von Neumann</a></li>
+          <li><a href="zgradba.html">Zgradba računalnika</a></li> 
+          <li><a href="vhodno-izhodne.html">Vhodno-izhodne naprave</a></li> 
+          <li><a href="krmiljenje.html">Krmiljenje</a></li>
+          <li><a href="informacije.html">Dodatne informacije in viri</a></li> 
+        </ul>
+      </nav>
+    </header>
+    
+    <section>
+	<h3>Naloga vhodno-izhodnih naprav</h3>
+      <p>
+        Vhodne, izhodne ter vhodno-izhodne naprave so ključne komponente računalniškega sistema v von Neumannovi arhitekturi. 
+		Omogočajo komunikacijo med računalnikom in zunanjim svetom, kar vključuje vnos podatkov v računalnik ter prikaz 
+		in predstavitev obdelanih podatkov. Brez teh naprav računalniki ne bi mogli sprejemati podatkov iz zunanjega sveta ali prikazovati rezultatov 
+		svojega delovanja. Učinkovita zasnova in uporaba vhodno-izhodnih naprav omogoča boljšo uporabniško izkušnjo in večjo 
+		funkcionalnost računalniških sistemov.
+      </p>
+	<br>
+      <h3>Vhodne naprave</h3>
+      <p>
+        Vhodne naprave omogočajo uporabnikom in drugim sistemom, da vnašajo podatke in ukaze v računalnik.
+		Nekatere pogoste vhodne naprave vključujejo:
+      </p>
+      <ul>
+        <li><strong>Tipkovnica</strong>: Omogoča uporabniku vnos besedilnih podatkov in ukazov.</li>
+        <li><strong>Miška</strong>: Omogoča uporabniku upravljanje s kazalcem in izbiro elementov na zaslonu.</li>
+        <li><strong>Skener</strong>: Pretvarja fizične dokumente in slike v digitalno obliko.</li>
+        <li><strong>Mikrofon</strong>: Omogoča vnos zvočnih podatkov, ki se lahko nato obdelajo ali shranijo.</li>
+      </ul>
+	<br>
+      <h3>Izhodne naprave</h3>
+      <p>
+        Izhodne naprave omogočajo računalniku, da prikaže in predstavi podatke uporabnikom ali drugim sistemom. 
+		Nekatere pogoste izhodne naprave vključujejo:
+      </p>
+      <ul>
+        <li><strong>Monitor</strong>: Prikazuje grafične in besedilne podatke na zaslonu.</li>
+        <li><strong>Tiskalnik</strong>: Tiska digitalne dokumente na papir.</li>
+        <li><strong>Projektor</strong>: Prikazuje grafične in besedilne podatke na večjih površinah.</li>
+        <li><strong>Slušalke</strong>: Omogočajo predvajanje zvoka uporabniku.</li>
+      </ul>
+	<br>
+  
+      <h3>Vhodno-izhodne naprave</h3>
+      <p>
+        Nekatere naprave služijo kot vhodne in izhodne naprave hkrati. Primeri takih naprav vključujejo:
+      </p>
+      <ul>
+        <li><strong>Na dotik občutljivi zasloni</strong>: Delujejo kot monitorji (izhodi) in kot naprave za vnos podatkov prek dotika (vhodi).</li>
+        <li><strong>Modemi</strong>: Omogočajo prenos podatkov med računalnikom in omrežjem.</li>
+		<li><strong>Kontroler</strong>: V računalnik pošiljajo informacije o pritisnjenih tipkah, sami pa vibrijajo na zahtevo računalnika.</li>
+        <li><strong>Shrambni diski</strong>: Prejemajo podatke in jih shranjujejo (izhodi) ter jih po potrebi pošiljajo (vhodi)</li>
+      </ul>
+      <p>
+        Vhodno-izhodne naprave delujejo v povezavi s CPE in pomnilnikom. Proces vključuje:
+      </p>
+      <ol>
+        <li>CPU pošlje ukaz za branje ali zapis podatkov vhodno-izhodni napravi.</li>
+        <li>Krmilna enota preko vodil pošlje informacije (torej ukaze in podatke) vhodno-izhodnim napravam.</li>
+        <li>Vhodno-izhodna naprava izvede ukaz, pri čemer prebere podatke iz pomnilnika ali jih zapiše v pomnilnik.</li>
+        <li>Vhodno-izhodna naprava pošlje povratne informacije CPU-ju o uspešnosti operacije.</li>
+      </ol>
+  
+      <p>
+        Vhodno-izhodne naprave uporabljajo različne vmesnike in protokole za komunikacijo z računalnikom. Nekatere naprave 
+		so priključene preko USB, druge preko omrežnih povezav ali brezžičnih tehnologij. Vsaka naprava potrebuje gonilnike,
+		ki omogočajo pravilno delovanje in komunikacijo z operacijskim sistemom.
+    </section>
+
+    <aside>
+	<div>
+    <img src="../slike/miska.png" alt="Slika brezžične miške">
+    <div>Brezžična miška</div>
+	</div>
+	<br>
+	<div id="okence">
+	<h3>Vse je relativno</h3>
+	<p>Ko govorimo o vhodnih napravah, si predstavljamo, da računalniki od njih prejmejo informacije. Če so te iste vhodne naprave same računalniki, 
+	je za njih računalnik izhodna naprava. 
+	<br>Primer tega je odnos med videokamero ter osebnim računalnikom (PC). Kamera 
+	računalniku pošilja podatke, zatorej je za PC vhodna naprava. Ker pa je tudi kamera primer računalnika po von Neumannu (razmislek zakaj
+	prepustimo bralcu), je za kamero PC izhodna naprava.
+	<br>Protiprimer je npr. gumb za zagon PC. Gumb sklene el. krog in sistem tako dobi informacijo, naj se zažene. Za PC
+	je gumb vhodna naprava, ker pa gumb po von Neumannu ni računalnik zanj PC ne more biti izhodna naprava.</p>
+	</div>
+	<br>
+	<div>
+    <img src="../slike/kontroler.png" alt="Slika kontrolerja">
+    <div>Kontroler za videoigre</div>
+	</div>
+    </aside> 
+  </div>
+
+  <div>
+    <footer>
+      <p>©2024 Ivo Štukelj</p>
+    </footer>
+  </div>
+
+</body>
+</html>
